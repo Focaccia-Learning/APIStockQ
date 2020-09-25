@@ -8,7 +8,7 @@
 
 Python相關：
 
-- [ ] 1.使用Pyhton爬出 http://www.stockq.org/的結構，看是轉成JSON or Array
+- [ ] 1.使用Pyhton爬出 http://www.stockq.org/   的結構，看是轉成JSON or Array
 - [ ] 2.實作C#與Python相關操作。
 
 結構設計：
@@ -85,6 +85,8 @@ Python相關：
          ```
 
 3. 設定完畢後先假設Model&Controller都已經建好了，就可以執行Migration的語法(於套件管理主控台中執行)
+
+   https://docs.microsoft.com/zh-tw/ef/core/get-started/?tabs=netcore-cli
 
 ```powershell
 Install-Package Microsoft.EntityFrameworkCore.Tools
