@@ -338,3 +338,6 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/APIStockQ/StockQ.db-wal
+/APIStockQ/StockQ.db-shm
+/APIStockQ/StockQ.db
