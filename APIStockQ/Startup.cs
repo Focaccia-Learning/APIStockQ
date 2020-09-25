@@ -28,7 +28,9 @@ namespace APIStockQ
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            //Swagger相關
             services.AddSwaggerGen(opt => opt.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Version = "v1", Title = "Api" }));
+            //設定資料庫連線
             services.AddDbContext<StockQContext>(options =>
                 options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
         }
@@ -43,8 +45,10 @@ namespace APIStockQ
 
             app.UseHttpsRedirection();
 
+            #region Swagger相關
             app.UseSwagger();
             app.UseSwaggerUI(opt => opt.SwaggerEndpoint("/swagger/v1/swagger.json", "Api"));
+            #endregion
 
             app.UseRouting();
 
